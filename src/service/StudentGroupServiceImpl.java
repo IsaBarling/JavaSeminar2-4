@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.*;  
 
 
-public class StudentGroupServiceImpl  {
+public class StudentGroupServiceImpl implements StudentGroupService {
 
 
     public void write(StudentGroup studentGroup) {
@@ -55,5 +55,25 @@ public class StudentGroupServiceImpl  {
     {
         GroupRepository gr = new GroupRepository();
         gr.findById(groupNumber);
+    }
+
+    @Override
+    public StudentGroup getGroup(int number) {
+        return null;
+    }
+
+    @Override
+    public StudentGroup getGroup() {
+        return null;
+    }
+
+    @Override
+    public void removeStudent(String firstName, String lastName) {
+
+    }
+
+    @Override
+    public void sortStudents(StudentGroup studentGroup) {
+
     }
 }

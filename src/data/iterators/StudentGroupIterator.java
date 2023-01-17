@@ -1,4 +1,4 @@
-package iterators;
+package data.iterators;
 
 import data.Student;
 

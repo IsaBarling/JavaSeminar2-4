@@ -1,7 +1,4 @@
-package comparators;
-
-import java.util.Comparator;
-import data.User;
+package data.comparators;
 
 /*
 public class UserComparator extends User implements Comparator<User>

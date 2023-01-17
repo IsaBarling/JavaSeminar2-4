@@ -1,6 +1,6 @@
-package comparators;
+package data.comparators;
 
-import streams.GroupStream;
+import data.GroupStream;
 import java.util.Comparator;
 
 

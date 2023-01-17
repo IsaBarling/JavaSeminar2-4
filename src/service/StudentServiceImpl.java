@@ -1,11 +1,12 @@
 package service;
 
+import data.Teacher;
 import data.User;
 import util.ReaderFromTxt;
 import util.WriterToTxt;
 import repository.*;
 import data.Student;
-public abstract class StudentServiceImpl implements DataService {
+public class StudentServiceImpl implements DataService {
 
     private StudentRepository StudentRepository;
 
@@ -18,6 +19,26 @@ public abstract class StudentServiceImpl implements DataService {
     public User read(User user) {
        return ReaderFromTxt.reads(user);
 
+    }
+
+    @Override
+    public void write(Teacher user) {
+
+    }
+
+    @Override
+    public User read(Teacher user) {
+        return null;
+    }
+
+    @Override
+    public void write(Student user) {
+
+    }
+
+    @Override
+    public User read(Student user) {
+        return null;
     }
 
     public void saveStudent(Student student)

@@ -1,44 +1,20 @@
 package controller;
 
-import java.util.Collections;
-
 import data.Student;
 import data.StudentGroup;
+import data.User;
 import service.DataService;
 import service.GroupStreamServiceImpl;
 import service.StudentGroupServiceImpl;
 import service.StudentServiceImpl;
 
-public class Controller {
+public interface Controller<E extends User, I> {
 
-    private DataService studentService;
-    private GroupStreamServiceImpl groupStreamService;
+    E create(E entity);
 
-    public Controller(StudentServiceImpl studentService) {
-        this.studentService = studentService;
+    E findById(I id);
+
+
+
     }
 
-    public Student createStudent(Student student){
-        studentService.write(student);
-        studentService.read(student);
-        return (Student) studentService.read(student);
-    }
-
-    public StudentGroup createGroup(int groupNumber){
-        StudentGroup studentGroup = new StudentGroup();
-        
-        return null;
-    }
-
-    public void deleteStudent(StudentGroup studentGroup, String name){
-        ((StudentGroupServiceImpl) studentService).deleteStByName(studentGroup , name);
-    }
-
-    public void sortStreams()
-    {
-        groupStreamService.sortGroupStreams();
-    }
-
-
-
-}

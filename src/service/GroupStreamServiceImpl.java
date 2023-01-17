@@ -3,18 +3,15 @@ package service;
 import java.util.Collections;
 import java.util.List;
 
-import comparators.GroupStreamComparator;
-import streams.GroupStream;
+import data.comparators.GroupStreamComparator;
+import data.GroupStream;
 
-public class GroupStreamServiceImpl {
+public class GroupStreamServiceImpl implements GroupStreamService{
 
-    List<GroupStream> Groups;
-/* public void SortGroups()
-    {        
-        Collections.sort(Groups); 
-    }*/
-    public void sortGroupStreams() {
-        Collections.sort(Groups, new GroupStreamComparator());
+
+    @Override
+    public void streamSort(List<GroupStream> groupStream) {
+
     }
-    
 }
+

@@ -2,7 +2,7 @@ package data;
 
 import java.util.Iterator;
 import java.util.List;
-import iterators.StudentGroupIterator;
+import data.iterators.StudentGroupIterator;
 
 public class StudentGroup implements Iterator<Student> {
     private Teacher teacher;

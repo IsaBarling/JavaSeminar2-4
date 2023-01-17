@@ -1,6 +1,6 @@
-package repository;
+package controller;
 
-public interface GroupController extends Controller {
+public interface GroupController {
     // в задании не сказано, что тут надо реализовывать, и какая логика ожидается
     // ГДЕ БЛИН ТЗ???
     // Пишите задание конкретно, иначе смысла нет в реализации. Для чего мы делаем этот интерфейс?
