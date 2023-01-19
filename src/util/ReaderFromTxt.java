@@ -1,15 +1,12 @@
 package util;
 
-import data.User;
-import java.io.IOException;
+import data.user.User;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.nio.charset.StandardCharsets;
-
-import java.io.FileReader;
-import java.io.FileWriter;
 
 public class ReaderFromTxt {
     public static User reads(User user){

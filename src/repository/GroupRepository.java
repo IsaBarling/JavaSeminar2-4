@@ -1,11 +1,6 @@
 package repository;
 
-import java.util.Map;
-
-import data.StudentGroup;
-
-import java.util.HashMap;
-import repository.Repository;
+import data.group.StudentGroup;
 
 public class GroupRepository implements Repository<StudentGroup, Integer> {
 

@@ -1,10 +1,12 @@
 package data.comparators;
 
-/*
-public class UserComparator extends User implements Comparator<User>
 
+import data.user.User;
 
-{
+import java.util.Comparator;
+
+public class UserComparator implements Comparator<User> {
+
 
 
     @Override
@@ -30,6 +32,7 @@ public class UserComparator extends User implements Comparator<User>
     }
 
 
+
+
 }
 
-*/

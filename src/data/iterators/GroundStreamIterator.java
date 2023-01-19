@@ -1,7 +1,7 @@
 package data.iterators;
 
-import data.StudentGroup;
-import data.GroupStream;
+import data.group.StudentGroup;
+import data.group.GroupStream;
 
 import java.util.Iterator;
 import java.util.List;
@@ -19,18 +19,28 @@ public class GroundStreamIterator implements Iterator<StudentGroup> {
         this.studentGroups = studentGroups;
     }
 
+    public GroundStreamIterator(GroupStream groundStream, List<StudentGroup> studentGroups) {
+        this.groundStream = groundStream;
+
+        this.studentGroups = studentGroups;
+    }
+
+
     @Override
     public boolean hasNext() {
-        return false;
+
+        return cursor < studentGroups.size();
     }
 
     @Override
     public StudentGroup next() {
-        return null;
+
+        return studentGroups.get(cursor++);
     }
 
     @Override
     public void remove() {
-        Iterator.super.remove();
+
+        studentGroups.remove(cursor);
     }
 }
